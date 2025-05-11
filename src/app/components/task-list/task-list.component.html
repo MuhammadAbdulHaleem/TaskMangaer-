@@ -1,0 +1,5 @@
+<h2 class="font-semibold text-2xl text-center">{{heading()}}</h2>
+
+@for (task of tasks(); track task.task) {
+    <app-task-list-item [TaskItems]="task"></app-task-list-item>
+} 
